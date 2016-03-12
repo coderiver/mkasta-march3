@@ -12,8 +12,29 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-	<i class="icon-sepa"></i>
-	//=include partials/partial.html  
+	<!-- BEGIN header -->
+		//=include partials/header.html
+	<!-- END header -->
+	<!-- BEGIN top -->
+		//=include partials/top.html
+	<!-- END top -->
+	<!-- BEGIN share -->
+		//=include partials/share.html
+	<!-- END share -->
+	<!-- BEGIN bottom -->
+	<section class="bottom">
+		<div class="js-sticky-end"></div>
+		<div class="inner">
+			<!-- BEGIN go-in -->
+				//=include partials/form.html
+			<!-- END go-in -->
+			<a href="#" class="btn">На главную</a>
+		</div>
+	</section>
+	<!-- END bottom -->
+	<!-- BEGIN footer -->
+		//=include partials/footer.html
+	<!-- END footer -->
 </div>
 <!-- END out-->
 </body>
