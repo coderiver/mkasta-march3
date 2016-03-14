@@ -22,6 +22,8 @@
 		margin-top: 2px
 		display: inline-block
 		+helvetica-bold
+		+r(450)
+			font-size: 18px
 .top__in
 	max-width: 1822px
 	padding: 20px 20px 0
@@ -35,6 +37,10 @@
 		margin: 25px 0
 	img
 		width: 100%
+		+r(900)
+			width: 90%
+		+r(800)
+			width: 80%
 .top__text
 	color: #fff
 	+helvetica-bold
@@ -49,21 +55,8 @@
 		line-height: 1.2
 	+r(500)
 		font-size: 22px
-.slider
-	.slick-arrow
-		margin-top: -40px
-		+r(800)
-			margin-top: -17px
-		&:before
-			+hide-text
-	.slick-prev
-		+s(arrow-left)
-		+r(800)
-			+s(arrow-left-sm)
-	.slick-next
-		+s(arrow-right)
-		+r(800)
-			+s(arrow-right-sm)
+	+r(450)
+		font-size: 18px
 .go-in
 	padding: 22px 19px
 	background-color: $dark
@@ -83,7 +76,7 @@
 		width: 81%
 		+r(1024)
 			width: 65%
-		+r(450)
+		+r(550)
 			width: 100%
 			padding-right: 0
 			margin-bottom: 10px
@@ -91,7 +84,7 @@
 		width: 19%
 		+r(1024)
 			width: 35%
-		+r(450)
+		+r(550)
 			width: 100%
 	.btn 
 		text-transform: uppercase
@@ -131,6 +124,7 @@
 	position: relative
 	margin-top: -2px
 	background-image: linear-gradient(to top, #C1D0EA 0%, #ffbfcf 50%, #95d2f1 100%)
+	overflow: hidden
 	.time-b
 		position: absolute
 		top: 160px
@@ -163,27 +157,48 @@
 			padding-bottom: 0
 		&.share__in_tspac
 			padding-top: 0
+		+r(900)
+			padding-bottom: 0
+.share-pic1
+	position: absolute
+	left: 423px
+	top: 215px
+	max-width: none
+	height: auto
+.share-pic2
+	position: absolute
+	right: 420px
+	top: 1820px
+	max-width: none
+	height: auto 
 .logos-wrp
 	position: relative
-	background: url(../img/bg-brands.jpg) no-repeat center top
-	background-size: cover
+	+rm(1100)
+		background: url(../img/bg-brands.jpg) no-repeat center top
+		background-size: cover
 .logos
 	max-width: 940px
 	background-color: transparent
 	border-radius: 10px
 	margin: auto
 	text-align: left
-	padding: 37px 35px 37px
+	padding: 37px 60px 55px
 	text-align: center
 	position: relative
 	+r(900)
-		padding: 30px 0px
+		padding: 30px 0px 0
 .logos__top
 	position: relative
 	+helvetica-bold
 	line-height: 1
 	text-align: left
 	font-size: 0
+	padding-bottom: 47px
+	+r(1100)
+		padding-bottom: 20px
+	+r(800)
+		text-align: center
+		padding-bottom: 10px
 	.title
 		text-transform: uppercase
 		font-size: 56px
@@ -192,22 +207,59 @@
 		vertical-align: top
 		padding-right: 20px
 		border-right: 2px solid #fff
+		+r(1100)
+			font-size: 48px
+		+r(900)
+			font-size: 36px
+		+r(800)
+			font-size: 26px
+		+r(500)
+			font-size: 22px
 		span
 			display: block
 			color: #486B7D
 			font-size: 38px
 			letter-spacing: -0.02em
+			+r(1100)
+				font-size: 32px
+			+r(900)
+				font-size: 24px
+			+r(500)
+				font-size: 18px
 	.date
 		display: inline-block
 		vertical-align: top
 		font-size: 28px
 		color: $magenta
 		padding-left: 22px
+		+r(900)
+			font-size: 36px
+		+r(800)
+			font-size: 26px
+		+r(500)
+			font-size: 22px
 		span
 			font-size: 56px
+			+r(1100)
+				font-size: 40px
+			+r(900)
+				font-size: 36px
+			+r(800)
+				font-size: 26px
+			+r(500)
+				font-size: 22px
 		p
 			font-size: 41px
 			text-transform: uppercase
+			+r(1100)
+				font-size: 32px
+			+r(900)
+				font-size: 24px
+			+r(800)
+				font-size: 24px
+				text-transform: lowercase
+			+r(500)
+				font-size: 18px
 
 .bottom
 	position: relative

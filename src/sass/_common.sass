@@ -99,3 +99,35 @@ a.btn
 	&.input-text_mod
 		height: 30px
 		padding: 0 10px
+.arrow
+	position: absolute
+	top: 30%
+	cursor: pointer
+	+r(410)
+		top: 76%
+.arrow_left
+	+s(arrow-left)
+	left: 50px
+	+r(1024)
+		+s(arrow-left-m)
+	+r(900)
+		left: 20px
+	+r(640)
+		left: 10px
+	+r(550)
+		+s(arrow-left-s)
+	+r(410)
+		left: 20px
+.arrow_right
+	+s(arrow-right)
+	right: 50px
+	+r(1024)
+		+s(arrow-right-m)
+	+r(900)
+		right: 20px
+	+r(640)
+		right: 10px
+	+r(550)
+		+s(arrow-right-s)
+	+r(410)
+		right: 20px
